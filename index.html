@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>5 Drugstore Dupes for High-End Skincare That Actually Work</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    body {
+      background-color: #fdf6f0 !important;
+      font-family: 'DM Sans', sans-serif !important;
+      color: #2c1a0e !important;
+      line-height: 1.7 !important;
+    }
+
+    /* HERO */
+    .hero {
+      background-color: #1a0a00 !important;
+      color: #fdf6f0 !important;
+      padding: 70px 24px 60px !important;
+      text-align: center !important;
+    }
+
+    .hero-eyebrow {
+      font-family: 'DM Sans', sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 500 !important;
+      letter-spacing: 3px !important;
+      text-transform: uppercase !important;
+      color: #c9a96e !important;
+      margin-bottom: 20px !important;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif !important;
+      font-size: clamp(28px, 6vw, 52px) !important;
+      font-weight: 700 !important;
+      line-height: 1.15 !important;
+      max-width: 720px !important;
+      margin: 0 auto 20px !important;
+    }
+
+    .hero h1 em {
+      font-style: italic !important;
+      color: #c9a96e !important;
+    }
+
+    .hero-sub {
+      font-size: 15px !important;
+      font-weight: 300 !important;
+      color: #c8b8a8 !important;
+      max-width: 520px !important;
+      margin: 0 auto !important;
+    }
+
+    /* INTRO */
+    .intro {
+      max-width: 680px !important;
+      margin: 0 auto !important;
+      padding: 48px 24px 24px !important;
+      text-align: center !important;
+    }
+
+    .intro p {
+      font-size: 16px !important;
+      color: #4a3728 !important;
+      font-weight: 300 !important;
+    }
+
+    /* DIVIDER */
+    .divider {
+      display: flex !important;
+      align-items: center !important;
+      gap: 16px !important;
+      max-width: 680px !important;
+      margin: 32px auto !important;
+      padding: 0 24px !important;
+    }
+
+    .divider-line {
+      flex: 1 !important;
+      height: 1px !important;
+      background: #d4b896 !important;
+    }
+
+    .divider-dot {
+      width: 6px !important;
+      height: 6px !important;
+      border-radius: 50% !important;
+      background: #c9a96e !important;
+    }
+
+    /* PRODUCT CARDS */
+    .cards {
+      max-width: 780px !important;
+      margin: 0 auto !important;
+      padding: 0 20px 60px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 48px !important;
+    }
+
+    .card {
+      background: #fff !important;
+      border-radius: 16px !important;
+      overflow: hidden !important;
+      box-shadow: 0 4px 24px rgba(44,26,14,0.08) !important;
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+    }
+
+    .card-number {
+      background: #1a0a00 !important;
+      color: #c9a96e !important;
+      font-family: 'Playfair Display', serif !important;
+      font-size: 13px !important;
+      letter-spacing: 2px !important;
+      text-transform: uppercase !important;
+      padding: 10px 20px !important;
+      text-align: center !important;
+    }
+
+    .card-image {
+      width: 100% !important;
+      aspect-ratio: 4/3 !important;
+      object-fit: cover !important;
+      display: block !important;
+    }
+
+    .card-body {
+      padding: 28px 28px 32px !important;
+    }
+
+    .dupe-label {
+      display: inline-block !important;
+      background: #fdf0e4 !important;
+      color: #b07d3a !important;
+      font-size: 11px !important;
+      font-weight: 500 !important;
+      letter-spacing: 2px !important;
+      text-transform: uppercase !important;
+      padding: 4px 12px !important;
+      border-radius: 20px !important;
+      margin-bottom: 14px !important;
+    }
+
+    .card-body h2 {
+      font-family: 'Playfair Display', serif !important;
+      font-size: 22px !important;
+      font-weight: 700 !important;
+      color: #1a0a00 !important;
+      margin-bottom: 6px !important;
+      line-height: 1.3 !important;
+    }
+
+    .vs-line {
+      font-size: 13px !important;
+      color: #9c7a5a !important;
+      margin-bottom: 16px !important;
+      font-weight: 500 !important;
+    }
+
+    .vs-line span {
+      color: #c9a96e !important;
+      font-weight: 700 !important;
+    }
+
+    .card-body p {
+      font-size: 15px !important;
+      color: #4a3728 !important;
+      font-weight: 300 !important;
+      margin-bottom: 24px !important;
+    }
+
+    .cta-btn {
+      display: inline-block !important;
+      background: #1a0a00 !important;
+      color: #fdf6f0 !important;
+      font-family: 'DM Sans', sans-serif !important;
+      font-size: 13px !important;
+      font-weight: 500 !important;
+      letter-spacing: 1.5px !important;
+      text-transform: uppercase !important;
+      text-decoration: none !important;
+      padding: 14px 28px !important;
+      border-radius: 4px !important;
+      transition: background 0.2s !important;
+    }
+
+    .cta-btn:hover {
+      background: #c9a96e !important;
+      color: #1a0a00 !important;
+    }
+
+    /* FOOTER NOTE */
+    .footer-note {
+      max-width: 680px !important;
+      margin: 0 auto !important;
+      padding: 0 24px 60px !important;
+      text-align: center !important;
+    }
+
+    .footer-note p {
+      font-size: 12px !important;
+      color: #9c7a5a !important;
+      font-weight: 300 !important;
+    }
+
+    @media (min-width: 600px) {
+      .card {
+        grid-template-columns: 280px 1fr !important;
+      }
+      .card-number {
+        grid-column: 1 / -1 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <p class="hero-eyebrow">Skincare Secrets</p>
+    <h1>5 Drugstore Dupes for High-End Skincare That <em>Actually Work</em></h1>
+    <p class="hero-sub">Why spend hundreds when these Amazon finds deliver the same glow for a fraction of the price?</p>
+  </div>
+
+  <!-- INTRO -->
+  <div class="intro">
+    <p>Luxury skincare is beautiful — but your bank account doesn't have to suffer for glass skin. We tested five cult high-end products against their drugstore doppelgängers available right now on Amazon. The results? Your routine is about to get a serious upgrade.</p>
+  </div>
+
+  <div class="divider">
+    <div class="divider-line"></div>
+    <div class="divider-dot"></div>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- CARDS -->
+  <div class="cards">
+
+    <!-- CARD 1 -->
+    <div class="card">
+      <div class="card-number">Dupe No. 01</div>
+      <img src="image1.jpg" alt="CeraVe Moisturizing Cream" class="card-image"/>
+      <div class="card-body">
+        <span class="dupe-label">Moisturizer</span>
+        <h2>CeraVe Moisturizing Cream</h2>
+        <p class="vs-line">Dupes: La Mer Crème de la Mer <span>($195 → ~$18)</span></p>
+        <p>La Mer's hero ingredient is fermented sea kelp — but CeraVe's ceramide-rich formula does the same heavy lifting: restoring your skin barrier, locking in moisture for 24 hours, and leaving skin impossibly soft. Dermatologist-developed and fragrance-free. This one's a no-brainer.</p>
+        <!-- AFFILIATE LINK 1: Replace # with your Amazon affiliate link -->
+        <a href="#" class="cta-btn">Shop on Amazon</a>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+      <div class="card-number">Dupe No. 02</div>
+      <img src="image2.jpg" alt="TXTRLab Vitamin C Serum" class="card-image"/>
+      <div class="card-body">
+        <span class="dupe-label">Vitamin C Serum</span>
+        <h2>TruSkin Vitamin C Serum</h2>
+        <p class="vs-line">Dupes: SkinCeuticals C E Ferulic <span>($182 → ~$20)</span></p>
+        <p>SkinCeuticals is the gold standard in antioxidant serums — but TruSkin's Vitamin C + Hyaluronic Acid formula brightens dark spots, evens tone, and boosts collagen without the luxury price tag. Over 100,000 five-star Amazon reviews don't lie.</p>
+        <!-- AFFILIATE LINK 2: Replace # with your Amazon affiliate link -->
+        <a href="#" class="cta-btn">Shop on Amazon</a>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+      <div class="card-number">Dupe No. 03</div>
+      <img src="image3.jpg" alt="Beauty of Joseon Sunscreen" class="card-image"/>
+      <div class="card-body">
+        <span class="dupe-label">SPF / Sunscreen</span>
+        <h2>Beauty of Joseon Relief Sun SPF 50+</h2>
+        <p class="vs-line">Dupes: Supergoop Unseen Sunscreen <span>($38 → ~$14)</span></p>
+        <p>Supergoop's invisible, weightless SPF has a cult following — but Beauty of Joseon's Relief Sun delivers the same no-white-cast, silky finish with rice and probiotics for skin-calming benefits. It's become the #1 K-beauty SPF for a reason.</p>
+        <!-- AFFILIATE LINK 3: Replace # with your Amazon affiliate link -->
+        <a href="#" class="cta-btn">Shop on Amazon</a>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card">
+      <div class="card-number">Dupe No. 04</div>
+      <img src="image4.jpg" alt="COSRX Snail Mucin Essence" class="card-image"/>
+      <div class="card-body">
+        <span class="dupe-label">Essence / Treatment</span>
+        <h2>COSRX Advanced Snail 96 Mucin Power Essence</h2>
+        <p class="vs-line">Dupes: SK-II Facial Treatment Essence <span>($230 → ~$25)</span></p>
+        <p>SK-II's Pitera essence is legendary in anti-aging circles — and COSRX's snail mucin delivers a similar hydration surge with skin-repair properties that visibly plump and smooth texture in weeks. Your skin won't know the difference. Your wallet definitely will.</p>
+        <!-- AFFILIATE LINK 4: Replace # with your Amazon affiliate link -->
+        <a href="#" class="cta-btn">Shop on Amazon</a>
+      </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="card">
+      <div class="card-number">Dupe No. 05</div>
+      <img src="image5.jpg" alt="Laneige Lip Sleeping Mask" class="card-image"/>
+      <div class="card-body">
+        <span class="dupe-label">Lip Treatment</span>
+        <h2>Laneige Lip Sleeping Mask</h2>
+        <p class="vs-line">Dupes: Fresh Sugar Lip Treatment <span>($26 → ~$14)</span></p>
+        <p>Fresh's Sugar Lip Treatment has been a beauty editor staple for years — but Laneige's Berry Lip Sleeping Mask out-hydrates it overnight with Vitamin C and antioxidants, leaving lips visibly fuller and softer by morning. It's the one product everyone on TikTok's bathroom shelf has in common.</p>
+        <!-- AFFILIATE LINK 5: Replace # with your Amazon affiliate link -->
+        <a href="#" class="cta-btn">Shop on Amazon</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER NOTE -->
+  <div class="footer-note">
+    <p>This post contains affiliate links. As an Amazon Associate I earn from qualifying purchases — at no extra cost to you. All opinions are my own.</p>
+  </div>
+
+</body>
+</html>
