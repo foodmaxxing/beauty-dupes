@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>5 Drugstore Dupes for High-End Skincare That Actually Work</title>
+  <title>5 Skincare Products That Outperform Their Luxury Counterparts</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after {
@@ -96,14 +96,14 @@
       background: #c9a96e !important;
     }
 
-    /* PRODUCT CARDS */
+    /* CARDS */
     .cards {
-      max-width: 780px !important;
+      max-width: 820px !important;
       margin: 0 auto !important;
       padding: 0 20px 60px !important;
       display: flex !important;
       flex-direction: column !important;
-      gap: 48px !important;
+      gap: 40px !important;
     }
 
     .card {
@@ -111,10 +111,9 @@
       border-radius: 16px !important;
       overflow: hidden !important;
       box-shadow: 0 4px 24px rgba(44,26,14,0.08) !important;
-      display: grid !important;
-      grid-template-columns: 1fr !important;
     }
 
+    /* NUMBER BAR — always full width on top */
     .card-number {
       background: #1a0a00 !important;
       color: #c9a96e !important;
@@ -124,20 +123,59 @@
       text-transform: uppercase !important;
       padding: 10px 20px !important;
       text-align: center !important;
-    }
-
-    .card-image {
-      width: 100% !important;
-      aspect-ratio: 4/3 !important;
-      object-fit: cover !important;
       display: block !important;
+      width: 100% !important;
     }
 
+    /* CARD INNER: image left, text right on desktop */
+    .card-inner {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
+    @media (min-width: 640px) {
+      .card-inner {
+        flex-direction: row !important;
+        align-items: stretch !important;
+      }
+    }
+
+    /* IMAGE WRAPPER */
+    .card-image-wrap {
+      background: #f5f0eb !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 24px !important;
+      /* Mobile: natural height */
+      min-height: 220px !important;
+    }
+
+    @media (min-width: 640px) {
+      .card-image-wrap {
+        width: 260px !important;
+        min-width: 260px !important;
+        min-height: unset !important;
+        flex-shrink: 0 !important;
+      }
+    }
+
+    .card-image-wrap img {
+      width: 100% !important;
+      max-width: 200px !important;
+      max-height: 220px !important;
+      object-fit: contain !important;
+      display: block !important;
+      margin: 0 auto !important;
+    }
+
+    /* CARD BODY */
     .card-body {
       padding: 28px 28px 32px !important;
+      flex: 1 !important;
     }
 
-    .dupe-label {
+    .category-label {
       display: inline-block !important;
       background: #fdf0e4 !important;
       color: #b07d3a !important;
@@ -164,11 +202,7 @@
       color: #9c7a5a !important;
       margin-bottom: 16px !important;
       font-weight: 500 !important;
-    }
-
-    .vs-line span {
-      color: #c9a96e !important;
-      font-weight: 700 !important;
+      font-style: italic !important;
     }
 
     .card-body p {
@@ -211,15 +245,6 @@
       color: #9c7a5a !important;
       font-weight: 300 !important;
     }
-
-    @media (min-width: 600px) {
-      .card {
-        grid-template-columns: 280px 1fr !important;
-      }
-      .card-number {
-        grid-column: 1 / -1 !important;
-      }
-    }
   </style>
 </head>
 <body>
@@ -227,13 +252,13 @@
   <!-- HERO -->
   <div class="hero">
     <p class="hero-eyebrow">Skincare Secrets</p>
-    <h1>5 Drugstore Dupes for High-End Skincare That <em>Actually Work</em></h1>
-    <p class="hero-sub">Why spend hundreds when these Amazon finds deliver the same glow for a fraction of the price?</p>
+    <h1>5 Amazon Skincare Products That <em>Outperform</em> Their Luxury Counterparts</h1>
+    <p class="hero-sub">These Amazon finds deliver the same glow as the luxury versions — without the luxury price tag.</p>
   </div>
 
   <!-- INTRO -->
   <div class="intro">
-    <p>Luxury skincare is beautiful — but your bank account doesn't have to suffer for glass skin. We tested five cult high-end products against their drugstore doppelgängers available right now on Amazon. The results? Your routine is about to get a serious upgrade.</p>
+    <p>Luxury skincare is beautiful — but glowing skin doesn't require a designer price tag. We found five Amazon skincare products that deliver luxury-level results and have the five-star reviews to prove it. Your routine is about to get a serious upgrade.</p>
   </div>
 
   <div class="divider">
@@ -247,66 +272,86 @@
 
     <!-- CARD 1 -->
     <div class="card">
-      <div class="card-number">Dupe No. 01</div>
-      <img src="image1.jpg" alt="CeraVe Moisturizing Cream" class="card-image"/>
-      <div class="card-body">
-        <span class="dupe-label">Moisturizer</span>
-        <h2>CeraVe Moisturizing Cream</h2>
-        <p class="vs-line">Dupes: La Mer Crème de la Mer <span>($195 → ~$18)</span></p>
-        <p>La Mer's hero ingredient is fermented sea kelp — but CeraVe's ceramide-rich formula does the same heavy lifting: restoring your skin barrier, locking in moisture for 24 hours, and leaving skin impossibly soft. Dermatologist-developed and fragrance-free. This one's a no-brainer.</p>
-        <a href="https://amzn.to/4xaa9hu" class="cta-btn">Shop on Amazon</a>
+      <span class="card-number">No. 01</span>
+      <div class="card-inner">
+        <div class="card-image-wrap">
+          <img src="image1.jpg" alt="CeraVe Moisturizing Cream"/>
+        </div>
+        <div class="card-body">
+          <span class="category-label">Moisturizer</span>
+          <h2>CeraVe Moisturizing Cream</h2>
+          <p class="vs-line">A smarter alternative to: La Mer Crème de la Mer</p>
+          <p>La Mer's hero ingredient is fermented sea kelp — but CeraVe's ceramide-rich formula does the same heavy lifting: restoring your skin barrier, locking in moisture for 24 hours, and leaving skin impossibly soft. Dermatologist-developed and fragrance-free. This one's a no-brainer.</p>
+          <a href="https://amzn.to/4xaa9hu" class="cta-btn">Shop on Amazon</a>
+        </div>
       </div>
     </div>
 
     <!-- CARD 2 -->
     <div class="card">
-      <div class="card-number">Dupe No. 02</div>
-      <img src="image2.jpg" alt="TXTRLab Vitamin C Serum" class="card-image"/>
-      <div class="card-body">
-        <span class="dupe-label">Vitamin C Serum</span>
-        <h2>TruSkin Vitamin C Serum</h2>
-        <p class="vs-line">Dupes: SkinCeuticals C E Ferulic <span>(~$182 → ~$35)</span></p>
-        <p>SkinCeuticals is the gold standard in antioxidant serums — but TruSkin's Vitamin C + Hyaluronic Acid formula brightens dark spots, evens tone, and boosts collagen without the luxury price tag. Over 100,000 five-star Amazon reviews don't lie.</p>
-        <a href="https://amzn.to/4fss3pn" class="cta-btn">Shop on Amazon</a>
+      <span class="card-number">No. 02</span>
+      <div class="card-inner">
+        <div class="card-image-wrap">
+          <img src="image2.jpg" alt="TruSkin Vitamin C Serum"/>
+        </div>
+        <div class="card-body">
+          <span class="category-label">Vitamin C Serum</span>
+          <h2>TruSkin Vitamin C Serum</h2>
+          <p class="vs-line">A smarter alternative to: SkinCeuticals C E Ferulic</p>
+          <p>SkinCeuticals is the gold standard in antioxidant serums — but TruSkin's Vitamin C + Hyaluronic Acid formula brightens dark spots, evens tone, and boosts collagen without the luxury price tag. Over 100,000 five-star Amazon reviews don't lie.</p>
+          <a href="https://amzn.to/4fss3pn" class="cta-btn">Shop on Amazon</a>
+        </div>
       </div>
     </div>
 
     <!-- CARD 3 -->
     <div class="card">
-      <div class="card-number">Dupe No. 03</div>
-      <img src="image3.jpg" alt="Beauty of Joseon Sunscreen" class="card-image"/>
-      <div class="card-body">
-        <span class="dupe-label">SPF / Sunscreen</span>
-        <h2>Beauty of Joseon Relief Sun SPF 50+</h2>
-        <p class="vs-line">Dupes: Supergoop Unseen Sunscreen <span>(~$38 → ~$18.99)</span></p>
-        <p>Supergoop's invisible, weightless SPF has a cult following — but Beauty of Joseon's Relief Sun delivers the same no-white-cast, silky finish with rice and probiotics for skin-calming benefits. It's become the #1 K-beauty SPF for a reason.</p>
-        <a href="https://amzn.to/4ubh1bC" class="cta-btn">Shop on Amazon</a>
+      <span class="card-number">No. 03</span>
+      <div class="card-inner">
+        <div class="card-image-wrap">
+          <img src="image3.jpg" alt="Beauty of Joseon Sunscreen"/>
+        </div>
+        <div class="card-body">
+          <span class="category-label">SPF / Sunscreen</span>
+          <h2>Beauty of Joseon Relief Sun SPF 50+</h2>
+          <p class="vs-line">A smarter alternative to: Supergoop Unseen Sunscreen</p>
+          <p>Supergoop's invisible, weightless SPF has a cult following — but Beauty of Joseon's Relief Sun delivers the same no-white-cast, silky finish with rice and probiotics for skin-calming benefits. It's become the #1 K-beauty SPF for a reason.</p>
+          <a href="https://amzn.to/4ubh1bC" class="cta-btn">Shop on Amazon</a>
+        </div>
       </div>
     </div>
 
     <!-- CARD 4 -->
     <div class="card">
-      <div class="card-number">Dupe No. 04</div>
-      <img src="image4.jpg" alt="COSRX Snail Mucin Essence" class="card-image"/>
-      <div class="card-body">
-        <span class="dupe-label">Essence / Treatment</span>
-        <h2>COSRX Advanced Snail 96 Mucin Power Essence</h2>
-        <p class="vs-line">Dupes: SK-II Facial Treatment Essence <span>(~$230 → ~$25)</span></p>
-        <p>SK-II's Pitera essence is legendary in anti-aging circles — and COSRX's snail mucin delivers a similar hydration surge with skin-repair properties that visibly plump and smooth texture in weeks. Your skin won't know the difference. Your wallet definitely will.</p>
-        <a href="https://amzn.to/4uOJmpm" class="cta-btn">Shop on Amazon</a>
+      <span class="card-number">No. 04</span>
+      <div class="card-inner">
+        <div class="card-image-wrap">
+          <img src="image4.jpg" alt="COSRX Snail Mucin Essence"/>
+        </div>
+        <div class="card-body">
+          <span class="category-label">Essence / Treatment</span>
+          <h2>COSRX Advanced Snail 96 Mucin Power Essence</h2>
+          <p class="vs-line">A smarter alternative to: SK-II Facial Treatment Essence</p>
+          <p>SK-II's Pitera essence is legendary in anti-aging circles — and COSRX's snail mucin delivers a similar hydration surge with skin-repair properties that visibly plump and smooth texture in weeks. Your skin won't know the difference. Your wallet definitely will.</p>
+          <a href="https://amzn.to/4uOJmpm" class="cta-btn">Shop on Amazon</a>
+        </div>
       </div>
     </div>
 
     <!-- CARD 5 -->
     <div class="card">
-      <div class="card-number">Dupe No. 05</div>
-      <img src="image5.jpg" alt="Laneige Lip Sleeping Mask" class="card-image"/>
-      <div class="card-body">
-        <span class="dupe-label">Lip Treatment</span>
-        <h2>Laneige Lip Sleeping Mask</h2>
-        <p class="vs-line">Dupes: Fresh Sugar Lip Treatment <span>(~$26 → ~$24)</span></p>
-        <p>Fresh's Sugar Lip Treatment has been a beauty editor staple for years — but Laneige's Berry Lip Sleeping Mask out-hydrates it overnight with Vitamin C and antioxidants, leaving lips visibly fuller and softer by morning. It's the one product everyone on TikTok's bathroom shelf has in common.</p>
-        <a href="https://amzn.to/4dJAviG" class="cta-btn">Shop on Amazon</a>
+      <span class="card-number">No. 05</span>
+      <div class="card-inner">
+        <div class="card-image-wrap">
+          <img src="image5.jpg" alt="Laneige Lip Sleeping Mask"/>
+        </div>
+        <div class="card-body">
+          <span class="category-label">Lip Treatment</span>
+          <h2>Laneige Lip Sleeping Mask</h2>
+          <p class="vs-line">A cult favorite alternative to: Fresh Sugar Lip Treatment</p>
+          <p>Fresh's Sugar Lip Treatment has been a beauty editor staple for years — but Laneige's Berry Lip Sleeping Mask out-hydrates it overnight with Vitamin C and antioxidants, leaving lips visibly fuller and softer by morning. It's the one product everyone on TikTok's bathroom shelf has in common.</p>
+          <a href="https://amzn.to/4dJAviG" class="cta-btn">Shop on Amazon</a>
+        </div>
       </div>
     </div>
 
